@@ -66,6 +66,9 @@ function bus_seat_design() {
 	// alert(arr['bus']); //exit(); 
 	//alert($.session.get('session_id'));
 	 var bus_id = arr['bus'] ;
+	 var jdate = document.getElementById('journey').value ; 
+	 
+	 document.getElementById('link_next').innerHTML = '<a href="confirmation.html?bus_id='+ bus_id +'&dt=' + jdate + '">Done</a><br>';
 	
 	var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
@@ -73,7 +76,7 @@ function bus_seat_design() {
                 document.getElementById('bus_seats').innerHTML = this.responseText;
             }
         };
-		url = BaseURL + "bus_seat_design.php?bus_id=" + bus_id  ;
+		url = BaseURL + "bus_seat_design.php?bus_id=" + bus_id + '&dt=' + jdate   ;
 		//alert(url);
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
