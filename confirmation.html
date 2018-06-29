@@ -1,0 +1,93 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Confirm Booking</title>
+	<!-- core CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <script src="script.js"></script>    
+</head>
+<body>
+<div id="header">
+	<div id="Sidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-long-arrow-left"></i></a>
+	  <a class="profile" href="#"><i class="fa fa-user-circle-o"></i> Samresh </a>
+	  <a href="index.html"><i class="fa fa-ticket"></i>Buy Now</a>
+	  <a href="available-routes.php"><i class="fa fa-bus"></i>Available Routes</a>
+	  <a href="selection.html"><i class="fa fa-caret-square-o-left"></i>Selection</a>
+	  <a href="past-booking.html"><i class="fa fa-undo"></i>Past Booking</a>
+	  <a href="future-booking.html"><i class="fa fa-repeat"></i>Future Booking</a>
+	  <a href="profile.html"><i class="fa fa-user-plus"></i>Profile</a>
+	  <a href="#"><i class="fa fa-power-off"></i>Log Out</a>
+	</div>
+<span onclick="openNav()"><i class="fa fa-navicon"></i></span>
+
+</div>
+<div id="container"class="cnfrmtn">
+<div class="submitform">
+	<form action="/action_page.php">
+		<div class="place">
+			<span class="left">
+				<h4>Reservation Upto</h4>
+				<h6>Kolkatta</h6>
+			</span>
+			<span class="right">
+				<h4>Reservation From</h4>
+				<h6>Ranchi</h6>
+			</span>
+		</div>
+		<div class="ddetails">
+			<span class="left">
+				<h4>Journey Date</h4>
+				<h6>23-Jan-2018</h6>
+			</span>
+			<span class="right">
+				<h4>Selected Seats</h4>
+				<h6>10,12,14</h6>
+			</span>
+		</div>
+		<div class="fare">
+			<h6>150.0 (Fare) + 20.0 (Service Charge)= 170.0</h6> 
+		</div>		
+		<div class="pdetails">
+			<span class="left">
+				<h4>Guest Name</h4>
+				<input type="text" name="name" placeholder="name">
+			</span>
+			<span class="right">
+				<h4>Mobile</h4>
+				<input type="text" name="mob" placeholder="Number">
+			</span>
+		</div>
+		<div class="asl">
+			<span class="left">
+				<h4>Gender</h4>
+				<div class="select_style">
+				<select name="text"> <!--Supplement an id here instead of using 'text'-->
+					<option value="value1" disabled="disabled" selected="selected">Select Gender</option> 
+					<option value="value2">Male</option>
+					<option value="value3">Female</option>
+				</select>
+				<span></span>
+				</div>
+			</span>
+			<span class="right">
+				<h4>Age</h4>
+				<input type="text" name="age" placeholder="Age">
+			</span>
+		</div>
+		<input type="submit" value="Confirm">
+	</form> 
+</div>
+	
+
+
+	
+</div>
+</body>
+</html>

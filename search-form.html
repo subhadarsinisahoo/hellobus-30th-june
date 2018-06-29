@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bus Booking App</title>
+	<!-- core CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <script src="script.js"></script>    
+	<script type="text/javascript" src="datajs/jq.js"></script>
+	<script src="datajs/globalvar.js"></script>
+	<script src="datajs/jquery.session.js"></script>
+	<script src="datajs/search-route-list.js"></script>    
+</head>
+<body>
+<div id="header">
+	<div id="Sidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onClick="closeNav()"><i class="fa fa-long-arrow-left"></i></a>
+	  <a class="profile" href="#"><i class="fa fa-user-circle-o"></i> Samresh </a>
+	  <a href="index.html"><i class="fa fa-ticket"></i>Buy Now</a>
+	  <a href="available-routes.html"><i class="fa fa-bus"></i>Available Routes</a>
+	  <a href="selection.html"><i class="fa fa-caret-square-o-left"></i>Selection</a>
+	  <a href="past-booking.html"><i class="fa fa-undo"></i>Past Booking</a>
+	  <a href="future-booking.html"><i class="fa fa-repeat"></i>Future Booking</a>
+	  <a href="profile.html"><i class="fa fa-user-plus"></i>Profile</a>
+	  <a href="#"><i class="fa fa-power-off"></i>Log Out</a>
+	</div>
+<span onClick="openNav()"><i class="fa fa-navicon">&nbsp;Buy Now</i></span> 
+
+</div>
+<div id="container" class="landing">
+<div class="submitform">
+	<form action="search.html" method="get">
+		<div class="fromto">
+			<label>From</label><br>
+			<i class="fa fa-search"></i><input class="location" type="text" id="from_str" name="fplace" placeholder="Select From Location"><br>
+			<label>To</label><br>
+			<i class="fa fa-search"></i><input type="text" name="tplace" id="to_str" placeholder="Select Destination Location"><br>
+		</div>
+		<div class="datesel">
+			<label>Journey Date</label><br>
+			<input id="journey" type="date" value="2018-01-16"/>
+		<span class="left">
+			<label>From Time</label><br>
+			<input id="exit-time" name="exit-time" type="time">
+		</span>
+		<span class="right">
+			<label>To Time</label><br>
+			<input id="exit-time" name="exit-time" type="time">
+		</span>
+		</div>	
+	  <input type="submit" value="Search Buses">
+	</form> 
+</div>
+
+	
+
+
+	
+</div>
+</body>
+</html>

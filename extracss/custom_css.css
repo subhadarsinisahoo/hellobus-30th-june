@@ -1,0 +1,6 @@
+.bus_seat_box_normal{ background:#CCCCCC; height:10px; width:50px; cursor:pointer; margin:8px; }
+.bus_seat_box_hover{ background:#990000; height:10px; width:50px; cursor:pointer; margin:8px; }
+.bus_seat_box_click{ background:#00FF00; height:10px; width:50px; cursor:pointer; margin:8px; text-align:center; font-size:14px; font-weight:bold; }
+.bus_seat_box_blank{ height:8px; width:25px; margin:4px; }
+
+.bus_seat_box_booked{ background:#FF0000; height:10px; width:50px; cursor:pointer; margin:8px; }
